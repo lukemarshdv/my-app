@@ -1,15 +1,12 @@
 # Require TF version to be same as or greater than 0.12.19
 terraform {
   required_version = ">=0.12.19"
-  /*
   backend "s3" {
     bucket         = "travis-ci-bootstrap-s3-kyler"
     key            = "terraform.tfstate"
     region         = "us-east-1"
-    dynamodb_table = "aws-locks"
     encrypt        = true
   }
-*/
 }
 
 # Download AWS provider
