@@ -4,7 +4,7 @@ import fetch from "isomorphic-unfetch";
 const Home = () => (
   <div className="container">
     <Head>
-      <title>Create Next App</title>
+      <title>Create Next App Next</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
@@ -201,14 +201,14 @@ const Home = () => (
   </div>
 );
 
-Home.getInitialProps = async function() {
+Home.getInitialProps = async function () {
   const res = await fetch("https://api.tvmaze.com/search/shows?q=batman");
   const data = await res.json();
 
   console.log(`Show data fetched. Count: ${data.length}`);
 
   return {
-    shows: data.map(entry => entry.show)
+    shows: data.map((entry) => entry.show),
   };
 };
 
