@@ -4,7 +4,7 @@ import fetch from "isomorphic-unfetch";
 const Home = () => (
   <div className="container">
     <Head>
-      <title>Create Next App Next</title>
+      <title>Create Next App HOME</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
