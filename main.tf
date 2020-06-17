@@ -2,9 +2,9 @@
 terraform {
   required_version = ">=0.12.19"
   backend "s3" {
-    bucket         = "travis-ci-bootstrap-s3-kyler"
+    bucket         = "travis-ci-bootstrap-s3-luke"
     key            = "terraform.tfstate"
-    region         = "us-east-1"
+    region         = "eu-west-2"
     encrypt        = true
   }
 }
