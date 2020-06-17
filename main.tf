@@ -29,7 +29,7 @@ module "bootstrap" {
   aws_iam_policy_assume_name  = "IamPolicyAssume"
 }
 
-/*
+
 # Build a VPC
 resource "aws_vpc" "aws_vpc" {
   cidr_block = "10.50.0.0/16"
@@ -45,4 +45,3 @@ resource "aws_subnet" "main" {
     Name = "TravisCiCreatedSubnet"
   }
 }
-*/
