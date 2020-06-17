@@ -18,6 +18,15 @@ provider "aws" {
   version = "~> 2.36.0"
 }
 
+# Terraform bootstrapping
+module "bootstrap" {
+  source                      = "./modules/website"
+  name_of_s3_bucket           = "unique-s3-bucket-name-you-created"
+  iam_user_name               = "IamUser"
+  ado_iam_role_name           = "IamRole"
+  aws_iam_policy_permits_name = "IamPolicyPermits"
+  aws_iam_policy_assume_name  = "IamPolicyAssume"
+}
 
 # Build a VPC
 resource "aws_vpc" "aws_vpc" {
