@@ -19,7 +19,7 @@ provider "aws" {
 }
 
 # Terraform bootstrapping
-module "bootstrap" {
+module "website" {
   source                      = "./modules/website"
   name_of_s3_bucket           = "unique-s3-bucket-name-you-created"
   iam_user_name               = "IamUser"
